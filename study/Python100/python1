@@ -1,0 +1,90 @@
+#!/wsk
+# -*- coding: UTF-8 -*-
+import time
+
+from __builtin__ import raw_input
+
+start =time.clock()
+for i in range(1, 5):
+    for j in range(1,5):
+        if(i==j):
+            continue;
+        else:
+            for k in range(1,5):
+                if(i==k):continue
+                if(j==k):continue
+                print(i,j,k)
+end = time.clock()
+print('Running time: %s Seconds'%(end-start))
+
+start1 =time.clock()
+for i in range(1,5):
+    for j in range(1,5):
+        for k in range(1,5):
+            if( i != k ) and (i != j) and (j != k):
+                print (i,j,k)
+end1 = time.clock()
+print('Running time: %s Seconds'%(end1-start1))
+
+
+# 使用递归
+def fib(n):
+    if n == 1 or n == 2:
+        return 1
+    return fib(n - 1) + fib(n - 2)
+
+
+# 输出了第10个斐波那契数列
+print(fib(10))
+
+
+def fib(n):
+    if n == 1:
+        return [1]
+    if n == 2:
+        return [1, 1]
+    fibs = [1, 1]
+    for i in range(2, n):
+        fibs.append(fibs[-1] + fibs[-2])
+    return fibs
+
+
+# 输出前 10 个斐波那契数列
+print(fib(20))
+
+
+
+print(time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())))
+# 暂停一秒
+time.sleep(1)
+print(time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())))
+
+f1 = 1
+f2 = 1
+for i in range(1,22):
+    print ('%12ld %12ld' % (f1,f2))
+    f1 = f1 + f2
+    f2 = f1 + f2
+#水仙花数
+for n in range(100,1000):
+    i = n / 100
+    j = n / 10 % 10
+    k = n % 10
+    if n == i ** 3 + j ** 3 + k ** 3:
+        print (n)
+
+import  re
+str=raw_input('请输入一串字符：')
+print(len(str))
+r1=re.compile('[a-zA-Z]')
+r2=re.compile('[0-9]')
+print ('英文字母的个数为： %d' %len(re.findall(r1,str)))
+print ('数字的个数为： %d' %len(re.findall(r2,str)))
+print ('空格的个数为： %d' %len(re.findall(' ',str)))
+print ('其他字符的个数为： %d' %(len(str)-len(re.findall(r1,str))-len(re.findall(r2,str))-len(re.findall(' ',str))))
+
+x2 = 1
+for day in range(1, 0, -1):
+    x1 = (x2 + 1) * 2
+    x2 = x1
+print(x1)
