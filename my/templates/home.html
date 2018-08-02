@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>自强学堂</title>
+</head>
+<body>
+
+<a href="/add/4/5/">计算 4+5</a>
+{% if  condition1  %}
+   <h1>... display 1</h1>
+{% endif %}
+{% if condition2 %}
+   <h1>... display 2</h1>
+{% else %}
+   <h1>... display 3</h1>
+{% endif %}
+for:
+<ul>
+{% for athlete in athlete_list %}
+    <li>{{ athlete }}</li>
+{% endfor %}
+</ul>
+for:
+<ul>
+    {% for athlete in athlete_list reversed %}
+         <span>{{ athlete }}</span>
+    {% endfor %}
+</ul>
+equal:
+{% ifequal condition1 true %}
+    <h1>condition1 is 'true'</h1>
+{% else %}
+    <h1>No News Here</h1>
+{% endifequal %}
+</body>
+</html>
