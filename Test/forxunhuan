@@ -1,0 +1,4 @@
+app_list = [1234, 5677, 8899]
+
+for temp in app_list:
+    print (temp)
