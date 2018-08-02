@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<title>Django基本的数据库操作</title>
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-3 column">
+		</div>
+		<div class="col-md-6 column">
+          <table class="table table-bordered  table-hover h3">
+              <caption>Django基本的数据库操作</caption>
+              <thead>
+              <tr>
+                  <th>ID</th>
+                  <th>name</th>
+                  <th>sex</th>
+                  <th>sex</th>
+                  <th>操作</th>
+              </tr>
+              </thead>
+              <tbody>
+              {% for item in ArtiInfo %}
+                  <tr >
+                      <td>{{ item.id }}</td>
+                      <td>{{ item.name }}</td>
+                      <td>{{ item.sex }}</td>
+                      <td>{{ item.age }}</td>
+                      <td><input  type="button" class="btn btn-primary btn-sm"
+                            onclick="GetId(this)" data-toggle="modal" data-target="#myModal" value="删除"/> ||
+                      <input  type="button" class="btn btn-primary btn-sm"
+                            onclick="GetRow(this)" data-toggle="modal" data-target="#myModa3" value="修改"/>
+                      </td>
+                  </tr>
+              {% endfor %}
+              </tbody>
+          </table>
+         <input type="button" data-toggle="modal" data-target="#myModa2" value="新增"/>
+		</div>
+		<div class="col-md-3 column">
+		</div>
+	</div>
+</div>
+
+<!-- Modal1 -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="static">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">温馨提示</h4>
+      </div>
+      <div class="modal-body">
+        <p>确认删除吗？</p>
+          <input id="delete" type="hidden">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="Delete()" >确认</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="myModa2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="static">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">新增</h4>
+      </div>
+      <div class="modal-body ">
+          <form action="/add" method="get" accept-charset="UTF-8" id="add">
+              姓名:<input type="text" name="name" ><br>
+              性别:<input type="radio" name="sex"  value="男" checked>男&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="sex" value="女">女<br>
+              年龄:<input type="number" name="age">
+          </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="Submit()" >提交</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="myModa3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="static">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">更新</h4>
+      </div>
+      <div class="modal-body ">
+          <form action="/add" method="get" accept-charset="UTF-8" id="update">
+              姓名:<input type="text" name="name" id="name"><br>
+              性别:<input type="radio" name="sex" id="sex" value="男" checked>男&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="sex" value="女">女<br>
+              年龄:<input type="number" name="age" id="age">
+          </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="Update()" >更新</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+<script>
+    function GetId(tdobject){
+       var td=$(tdobject);
+       {#console.log($(tdobject).parent().html());#}
+        var tds= $(tdobject).parent().parent().find('td');
+        $('#delete').val(tds.eq(0).text());
+    }
+    function Delete(){
+     var id=$('#delete').val();
+     var url='/delete?id='+id;
+     window.location.href=url;
+     {#$.get(url,function(data,status){#}
+     {#    if(status){#}
+     {#         window.location.href='/'#}
+     {#    }else {#}
+     {#        alert('请求失败！')#}
+     {#    }#}
+	{#{);#}
+    }
+
+    function Submit() {
+        $('#add').submit();
+    }
+
+    function GetRow(tdobject){
+       var td=$(tdobject);
+       {#console.log($(tdobject).parent().html());#}
+        var tds= $(tdobject).parent().parent().find('td');
+        console.log(tds.eq(1).text())
+        $('#name').val(tds.eq(1).text());
+        $('#sex').val(tds.eq(2).text());
+        $('#age').val(tds.eq(3).text());
+    }
+</script>
+</html>
