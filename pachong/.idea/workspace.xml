@@ -35,6 +35,8 @@
     <SUITE FILE_PATH="coverage/pachong$gaojiehanshu.coverage" NAME="gaojiehanshu Coverage Results" MODIFIED="1532329877359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基础" />
     <SUITE FILE_PATH="coverage/pachong$yichang.coverage" NAME="yichang Coverage Results" MODIFIED="1532413774276" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫" />
     <SUITE FILE_PATH="coverage/pachong$aa.coverage" NAME="aa Coverage Results" MODIFIED="1532397381480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pachong$urllib.coverage" NAME="urllib Coverage Results" MODIFIED="1533262206913" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫/Study" />
+    <SUITE FILE_PATH="coverage/pachong$myurllib.coverage" NAME="myurllib Coverage Results" MODIFIED="1533262368013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫/Study" />
     <SUITE FILE_PATH="coverage/pachong$mycookie.coverage" NAME="mycookie Coverage Results" MODIFIED="1532414452872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫/Cookie" />
     <SUITE FILE_PATH="coverage/pachong$urllibtest.coverage" NAME="urllibtest Coverage Results" MODIFIED="1532504959922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫/爬取一卡通帖子" />
     <SUITE FILE_PATH="coverage/pachong$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1532337729799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫" />
@@ -48,7 +50,7 @@
       <file leaf-file-name="mzitustudy.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/爬虫/Study/百度图片/mzitu/mzitustudy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1386">
+            <state relative-caret-position="1276">
               <caret line="63" selection-start-line="63" selection-end-line="63" />
             </state>
           </provider>
@@ -66,7 +68,7 @@
       <file leaf-file-name="erweishuzu.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/基础/erweishuzu.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
+            <state relative-caret-position="1100">
               <caret line="50" column="58" selection-start-line="50" selection-start-column="58" selection-end-line="50" selection-end-column="58" />
             </state>
           </provider>
@@ -81,11 +83,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chazhao.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="chazhao.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/基础/chazhao.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="22">
               <caret line="1" column="24" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="myurllib.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/爬虫/Study/myurllib.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-159">
+              <caret line="82" column="46" selection-start-line="82" selection-start-column="38" selection-end-line="82" selection-end-column="46" />
+              <folding>
+                <element signature="e#56#70#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -187,6 +201,8 @@
         <option value="$PROJECT_DIR$/基础/erweishuzu.py" />
         <option value="$PROJECT_DIR$/基础/dasu.py" />
         <option value="$PROJECT_DIR$/基础/chazhao.py" />
+        <option value="$PROJECT_DIR$/爬虫/Study/urllib.py" />
+        <option value="$PROJECT_DIR$/爬虫/Study/myurllib.py" />
       </list>
     </option>
   </component>
@@ -201,7 +217,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="330" />
-    <option name="y" value="43" />
+    <option name="y" value="42" />
     <option name="width" value="1400" />
     <option name="height" value="990" />
   </component>
@@ -228,6 +244,12 @@
               <item name="pachong" type="462c0819:PsiDirectoryNode" />
               <item name="爬虫" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="pachong" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pachong" type="462c0819:PsiDirectoryNode" />
+              <item name="爬虫" type="462c0819:PsiDirectoryNode" />
+              <item name="Study" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -239,7 +261,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Scrapy/my" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="E:/Myprogram/Node/node" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -265,7 +287,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.chazhao">
+  <component name="RunManager" selected="Python.myurllib">
     <configuration name="chazhao" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pachong" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -304,25 +326,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="erfenfa" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="pachong" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/基础" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/基础/erfenfa.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration name="erweishuzu" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pachong" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -342,7 +345,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="mzitustudy (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="myurllib" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pachong" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -350,12 +353,31 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/爬虫/Study/百度图片/mzitu" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/爬虫/Study" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/爬虫/Study/百度图片/mzitu/mzitustudy.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/爬虫/Study/myurllib.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="urllib" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pachong" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/爬虫/Study" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="E:\wsk\Python\pachong\爬虫\Study\myurllib.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -443,19 +465,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list>
-      <item itemvalue="Python.mzitustudy (1)" />
-      <item itemvalue="Python.erfenfa" />
       <item itemvalue="Python.erweishuzu" />
       <item itemvalue="Python.dasu" />
       <item itemvalue="Python.chazhao" />
+      <item itemvalue="Python.urllib" />
+      <item itemvalue="Python.myurllib" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.myurllib" />
+        <item itemvalue="Python.urllib" />
         <item itemvalue="Python.chazhao" />
         <item itemvalue="Python.dasu" />
         <item itemvalue="Python.erweishuzu" />
-        <item itemvalue="Python.erfenfa" />
-        <item itemvalue="Python.mzitustudy (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -482,13 +504,13 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50067025" side_tool="true" weight="0.33898306" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="8" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33898306" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" weight="0.33898306" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32909605" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49895614" visible="true" weight="0.15147454" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49895614" visible="true" weight="0.15348525" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -540,6 +562,71 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/爬虫/Study/百度图片/mzitu/mzitustudy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1276">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基础/erfenfa.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基础/erweishuzu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1100">
+          <caret line="50" column="58" selection-start-line="50" selection-start-column="58" selection-end-line="50" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基础/dasu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬虫/Study/百度图片/mzitu/mzitu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬虫/Study/百度图片/tupian.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="34" column="38" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="38" />
+          <folding>
+            <element signature="e#33#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬虫/Study/百度图片/seleniumtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="20" column="54" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="54" />
+          <folding>
+            <element signature="e#17#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基础/chazhao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="24" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/爬虫/Study/百度图片/mzitu/mzitustudy.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1386">
@@ -811,7 +898,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/爬虫/Study/百度图片/mzitu/mzitustudy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1386">
+        <state relative-caret-position="1276">
           <caret line="63" selection-start-line="63" selection-end-line="63" />
         </state>
       </provider>
@@ -825,7 +912,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/基础/erweishuzu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
+        <state relative-caret-position="1100">
           <caret line="50" column="58" selection-start-line="50" selection-start-column="58" selection-end-line="50" selection-end-column="58" />
         </state>
       </provider>
@@ -841,6 +928,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="1" column="24" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬虫/Study/myurllib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-159">
+          <caret line="82" column="46" selection-start-line="82" selection-start-column="38" selection-end-line="82" selection-end-column="46" />
+          <folding>
+            <element signature="e#56#70#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
