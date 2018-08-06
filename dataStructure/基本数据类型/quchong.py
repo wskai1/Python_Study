@@ -16,7 +16,7 @@ def dedupe(items, key=None):
         if val not in seen:
             yield item
             seen.add(val)
-            
+
 if __name__ == '__main__':
     items=[1,11,2,2,3,3,4,4,5,5,6,6,8,9,4,2,51,25,3]
     # 最简单方法：利用set，但是会改变列表原有的顺序
